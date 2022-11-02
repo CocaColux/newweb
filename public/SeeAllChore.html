@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title> All Chores </title>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="./img/unknown.png" class="logo" width = "20px" height ="20px" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  class="active" href="index.html">Home</a></li>
+                <li><a href="SeeAllChore.html">All Chores</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signin.html">Account</a></li>
+                 <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+       
+        <h2>My Chores</h2>
+       
+        <p> You can find here all your chores </p>
+       
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Chores id</td>
+                    <td>Chores name</td>
+                    <td>Description</td>
+                    <td>Room name</td>
+                </tr>
+            </thead>
+            <tbody class="row">
+            </tbody>
+        </table>
+    </section>
+    <button
+    style="margin-bottom: 25%"
+    class="custom-btn btn-4"
+    class="text-center"
+    id="creation"
+    onclick="executeFunction2()">
+    <span>Refresh</span>
+    </button>
+    <input
+        id="id_chore"
+        placeholder="Enter the id of the chore"
+      />
+    <button
+    style="margin-bottom: 25%"
+    class="custom-btn btn-4"
+    class="text-center"
+    id="delete"
+    onclick="deletefunction()">
+    <span>Delete your chores</span>
+    </button>
+
+
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="img/logo.png" alt="">
+          <h4>Contact</h4>
+          <p> <strong>Address:</strong> 510 E Peltason Dr, Irvine, CA, 92618</p>
+          <p> <strong> Phone: </strong>+33601175951</p>
+          <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-youtube"></i>
+              </div>
+          </div>
+      </div>
+  
+      <div class="col">
+          <h4>About</h4>
+          <a href="#"> About Us</a>
+          <a href="#"> Privacy Policy</a>
+          <a href=""> Terms & Conditions </a>
+          <a href="#"> Contact Us </a>
+      </div>
+  
+      <div class="col">
+          <h4>My account</h4>
+          <a href="#"> Sign Us</a>
+          <a href="#"> All chores </a>
+          <a href="#"> Help </a>
+      </div>
+  
+  
+      <div class="copyright p">
+          <p>Web Project UC Irvine ChoresCount® - All rights reserved</p>
+      </div>
+  
+  
+      </footer>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
